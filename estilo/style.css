@@ -452,6 +452,7 @@ footer {
         padding: 7px;
         margin-bottom: 15px;
         border-radius: 5px;
+        background-color: #FFF;
     }
 
     #but-pesquisa {
@@ -462,6 +463,7 @@ footer {
 
     .catalogo {
         margin-top: 40px;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -470,7 +472,7 @@ footer {
     .catalogo div {
         background-color: var(--fundo-secundario-claro);
         text-align: center;
-        height: 400px;
+        height: auto;
         width: 100%;
         margin-bottom: 13px;
         border-radius: 5px;
@@ -481,19 +483,28 @@ footer {
     }
 
     .sec-cat div {
-        width: 65vw;
+        width: 67vw;
     }
 
     .sec-cat p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .sobre-box {
         max-height: 45vh;
     }
 
+    .sobre-img {
+        background-image: url(../imagens/Frame\ 2.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px 0px 0px 5px;
+        height: auto;
+        width: 100%;
+    }
+
     .sobre-img img {
-        height: 45vh;
+        display: none;
     }
 
     .sobre-escrita{
