@@ -177,6 +177,7 @@ header li a:hover {
 }
 
 ::placeholder {
+    background-color: #FFF;
     padding: 0px 10px;
 }
 
@@ -206,7 +207,7 @@ header li a:hover {
     display: flex;
     height: 400px;
     width: 26vw;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
     border-radius: 5px;
     flex-direction: column;
     justify-content: center;
@@ -441,6 +442,10 @@ footer {
         flex-direction: column;
         justify-items: center;
     }
+
+    ::placeholder {
+        font-size: 0.9rem;
+    }
     
     #pesquisa-catalogo {
         width: auto;
@@ -465,22 +470,34 @@ footer {
     .catalogo div {
         background-color: var(--fundo-secundario-claro);
         text-align: center;
-        height: 350px;
+        height: 400px;
         width: 100%;
         margin-bottom: 13px;
         border-radius: 5px;
     }
 
+    .sec-cat img {
+        width: 70vw;
+    }
+
+    .sec-cat div {
+        width: 65vw;
+    }
+
+    .sec-cat p {
+        font-size: 0.8rem;
+    }
+
     .sobre-box {
-        max-height: 60vh;
+        max-height: 45vh;
     }
 
     .sobre-img img {
-        height: 60vh;
+        height: 45vh;
     }
 
     .sobre-escrita{
-        max-height: 50vh;
+        max-height: 45vh;
     }
 
     .sobre-escrita h3, .section-sobre h3, .trans-escrita h3 {
@@ -488,7 +505,7 @@ footer {
     }
 
     .sobre-escrita p, .trans-escrita p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         letter-spacing: 1px;
     }
 
@@ -498,11 +515,12 @@ footer {
     }
 
     .trans-escrita {
-        width: 60vw;
+        width: 70vw;
+        padding-right: 0px;
     }
 
     .img-trans img {
-        width: 45vw;
+        width: 40vw;
     }
 
     footer {
