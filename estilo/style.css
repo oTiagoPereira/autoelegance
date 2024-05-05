@@ -394,6 +394,7 @@ footer {
 }
 .footer-fim a {
     text-decoration: none;
+    font-size: 1rem;
     color: var(--contraste);
 }
 
@@ -523,6 +524,7 @@ footer {
     .box-trans {
         display: flex;
         flex-direction: column;
+        height: 400px;
     }
 
     .trans-escrita {
@@ -568,6 +570,19 @@ footer {
 
     .sec-cat div {
         width: 30vw;
+    }
+
+    .sobre-img {
+        background-image: url(../imagens/Frame\ 2.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px 0px 0px 5px;
+        height: auto;
+        width: 100%;
+    }
+
+    .sobre-img img {
+        display: none;
     }
 }
 
