@@ -1,0 +1,217 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --fundos:#F5F5F5;
+    --fundo-secundario: #CCCCCC;
+    --fundo-secundario-claro:#ededed;
+    --destaque:#FFC300;
+    --texto:#000;
+    --contraste: #003566;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    background-color: #FFF;
+    min-width: 350px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    background-color: var(--destaque);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 40px 15px;
+    height: 20px;
+    width: auto;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.367);
+}
+
+header > div {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: var(--contraste);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    align-items: center;
+    display: flex;
+}
+
+header li a{
+    color: var(--contraste);
+    text-decoration: none;
+    padding: 0px 20px 0px 0px;
+    display: inline;
+    transition: 0.3s ease;
+}
+
+header input {
+    color: var(--contraste);
+    background-color: var(--destaque);
+    border: var(--contraste) solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#bot-menu {
+    display: none;
+}
+
+header input:hover {
+    background-color: var(--contraste);
+    color: var(--fundos);
+}
+
+header li a:hover {
+    color: #8b6b01;
+}
+
+.conteudo {
+    display: flex;
+    margin: auto;
+    max-width: 80vw;
+}
+
+.box-carro {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin: auto;
+    width: 50vw;
+}
+
+.box-informacao {
+    background-color: var(--fundo-secundario-claro);
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 80vw;
+}
+
+.nome-carro {
+    width: 100%;
+    height: 20px;
+}
+
+.descricao {
+    display: flex;
+    padding-top: 300px;
+    justify-content: space-between;
+    width: auto;
+}
+
+.box-det {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.detalhes-carro {
+    width: 70vw;
+    display: flex;
+}
+
+.descricao p {
+    color: rgb(70, 70, 70);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.descricao ul {
+    list-style: none;
+}
+
+footer {
+    background-color: var(--contraste);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacoes-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    height: 200px;
+    width: 80vw;
+}
+
+.informacoes-footer div {
+    height: 50%;
+}
+.informacoes-footer h4 {
+    margin-bottom: 5px;
+}
+
+.informacoes-footer ul {
+    list-style: none;
+    margin-top: 2px;
+}
+
+.informacoes-footer li, a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #FFF;
+}
+
+.footer-fim  {
+    background-color: var(--destaque);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--contraste);
+    height: 50px;
+    width: 100%;
+}
+.footer-fim a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--contraste);
+}
+
+.footer-fim a:hover {
+    text-decoration: underline;
+}
