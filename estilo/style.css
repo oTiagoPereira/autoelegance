@@ -521,10 +521,14 @@ footer {
         letter-spacing: 1px;
     }
 
+    .section-trans {
+        height: 100vh;
+    }
+
     .box-trans {
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: 500px;
     }
 
     .trans-escrita {
