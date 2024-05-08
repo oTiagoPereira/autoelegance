@@ -26,7 +26,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -119,46 +118,51 @@ img {
     width: 50vw;
 }
 
-.box-informacao {
+.descricao {
     background-color: var(--fundo-secundario-claro);
     display: flex;
+    align-items: center;
     flex-direction: column;
-    height: 600px;
     width: 80vw;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
-.nome-carro {
-    width: 100%;
-    height: 20px;
-}
-
-.descricao {
+span {
     display: flex;
-    padding-top: 300px;
-    justify-content: space-between;
-    width: auto;
+    flex-direction: column;
+    width: 75vw;
+    height: 90px;
+    margin: 30px 0px 2px 0px;
 }
 
-.box-det {
+span h1 {
+    font-size: 2rem;
+    
+}
+
+.descricao-detalhes {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 80vw;
+    height: auto;
+    width: 75vw;
 }
 
-.detalhes-carro {
-    width: 70vw;
-    display: flex;
-}
-
-.descricao p {
-    color: rgb(70, 70, 70);
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-.descricao ul {
+ul {
     list-style: none;
+}
+
+.box-prin, .box-secun {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.box-prin div, .box-secun div {
+    height: 50px;
 }
 
 footer {
@@ -167,6 +171,8 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.220);
+
 }
 
 .informacoes-footer {
