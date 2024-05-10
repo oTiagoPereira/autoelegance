@@ -47,7 +47,7 @@ header > div {
     justify-content: space-between;
 }
 
-header h1 {
+header h1 a {
     color: var(--contraste);
     display: flex;
     align-items: center;
@@ -137,39 +137,65 @@ span {
     margin: 30px 0px 2px 0px;
 }
 
-span h1 {
+span p {
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+span div {
+    display: flex;
+}
+
+.h1-nome {
     font-size: 2rem;
-    
+    width: 50%;
+}
+
+.h1-valor {
+    text-align: right;
+    font-size: 2rem;
+    width: 50%;
 }
 
 .descricao-detalhes {
     display: flex;
-    align-items: center;
-    height: auto;
-    width: 75vw;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 ul {
+    font-size: 0.9rem;
     list-style: none;
 }
 
-.box-prin, .box-secun {
+.box-prin{
     display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 30%;
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+.box-secun {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .box-prin div, .box-secun div {
-    height: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.box-negociacao {
+    width: 50%;
+    height: 200px;
 }
 
 footer {
     background-color: var(--contraste);
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.220);
 
@@ -220,4 +246,43 @@ footer {
 
 .footer-fim a:hover {
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 350px){
+    header li {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    #bot-menu {
+        display: block;
+        margin-left: 10px;
+    }
+    
+    
+
+    footer {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .informacoes-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 68%;
+        margin: 20px 0px;
+        justify-content: space-around;
+    }
+
+    .informacoes-footer div {
+        height: 10px;
+    }
 }
