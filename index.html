@@ -10,15 +10,21 @@
 <body>
     <header>
         <div>
-            <h1>Auto<strong>Elegance</strong></h1>
-            <nav>
-                <ul id="menu">
+            <h1><a href="index.html">Auto<strong>Elegance</a></strong></h1>
+            <nav id="navbar">
+                <ul class="horizontal-menu">
+                    <li id="lista"><a href="#cat">Catálogo</a></li>
+                    <li id="lista"><a href="#sob">Sobre</a></li>
+                    <li id="lista"><a href="#con">Contato</a></li>
+                </ul>
+                <ul id="menu" class="vertical-menu">
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="#cat">Catálogo</a></li>
                     <li><a href="#sob">Sobre</a></li>
                     <li><a href="#con">Contato</a></li>
-                    <input type="button" value="Conecte-se">
-                    <input type="button" value="Menu" id="bot-menu">
                 </ul>
+                <input type="button" value="Conecte-se">
+                <input type="button" value="Menu" id="bot-menu" >
             </nav>
         </div>
     </header>
