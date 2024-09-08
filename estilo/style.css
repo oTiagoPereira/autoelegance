@@ -69,7 +69,7 @@ nav {
   list-style: none;
 }
 
-.vertical-menu, ul, li, .menuItens, #btn-exit {
+.vertical-menu, .vertical-menu > ul, .vertical-menu > li ,.menuItens, #btn-exit {
   display: none;
 }
 
