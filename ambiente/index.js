@@ -1,5 +1,5 @@
 const menu = document.getElementById("menu");
-var menuItems = document.querySelectorAll(".menuItens");
+let menuItems = document.querySelectorAll(".menuItens");
 
 function mostraMenu() {
   menuItems.forEach(function(item) {
